@@ -9,6 +9,6 @@ services:
       - key: DJANGO_SETTINGS_MODULE
         value: notes_project.settings
       - key: PYTHON_VERSION
-        value: 3.12
+        value: 3.13.2
       - key: DATABASE_URL
         value: ${NEON_DATABASE_URL}
