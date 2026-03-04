@@ -1,0 +1,14 @@
+{% extends 'notes_app/base.html' %}
+{% block content %}
+{% if object.icon %}
+    <img src="{{ object.icon.url }}" alt="icon" class="mb-3"
+         style="height: 64px; width: 64px; object-fit: cover;">
+{% endif %}
+<h1>{{ object.title }}</h1>
+<p><strong>Category:</strong> {{ object.category }}</p>
+<p><strong>Date taken:</strong> {{ object.date_taken }}</p>
+<p>{{ object.content|linebreaks }}</p>
+<a href="{% url 'note_update' object.pk %}" class="btn btn-secondary">Edit</a>
+<a href="{% url 'note_delete' object.pk %}" class="btn btn-danger">Delete</a>
+<a href="{% url 'note_list' %}" class="btn btn-link">Back to list</a>
+{% endblock %}
