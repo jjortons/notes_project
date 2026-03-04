@@ -151,6 +151,7 @@ DATABASES = {
 
 ALLOWED_HOSTS = [
     "notes-neon-render.onrender.com",
+    "notes-neon-render.miracleostrich.ca",
     "miracleostrich.ca",
     "www.miracleostrich.ca",
     "localhost",
