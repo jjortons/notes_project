@@ -146,3 +146,13 @@ DATABASES = {
         ssl_require=True,
     )
 }
+
+
+
+ALLOWED_HOSTS = [
+    "notes-neon-render.onrender.com",
+    "miracleostrich.ca",
+    "www.miracleostrich.ca",
+    "localhost",
+    "127.0.0.1",
+]
